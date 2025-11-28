@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import GuestCountPage from './pages/GuestCountPage';
+import EnterNamesPage from './pages/EnterNamesPage';
+import PlayerListPage from './pages/PlayerListPage';
+import VotingPage from './pages/VotingPage';
+import { prefetchPlayers } from './redux/slices/playerPoolSlice';
 
 function App() {
+  const dispatch = useDispatch();
+  const gamePhase = useSelector((state) => state.game.gamePhase);
+  const playerStatus = useSelector((state) => state.playerPool.status);
+
+  useEffect(() => {
+    if (playerStatus === 'idle') {
+      dispatch(prefetchPlayers());
+    }
+  }, [dispatch, playerStatus]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {gamePhase === 'guestCount' && <GuestCountPage />}
+      {gamePhase === 'enterNames' && <EnterNamesPage />}
+      {gamePhase === 'playerList' && <PlayerListPage />}
+      {gamePhase === 'voting' && <VotingPage />}
+    </>
   );
 }
 
