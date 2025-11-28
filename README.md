@@ -1,10 +1,6 @@
 # ⚽ Mr. White - Football Player Edition
 
-A party guessing game inspired by the classic "Mr. White" game, but with football players!
-
-## 🎮 Game Logic
-
-Everyone gets the **same football player card**, except one person — **Mr. White** — who gets a **different player**. Players discuss and vote to find who has the odd one out!
+A party guessing game: every guest sees the same football player except the one "Mr. White" who holds a different card. Players reveal their cards, compare details, and vote to spot the odd player.
 
 ## 📸 Screenshots
 
@@ -19,13 +15,6 @@ Everyone gets the **same football player card**, except one person — **Mr. Whi
 ## 🛠️ Tech Stack
 
 **React 18** • **Redux Toolkit** • **Styled Components** • **Football API**
-
-## 🚀 Quick Start
-
-```bash
-npm install
-npm start
-```
 
 ---
 
