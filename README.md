@@ -6,11 +6,11 @@ A party guessing game: every guest sees the same football player except the one 
 
 | Enter Names | Reveal Card | Vote |
 |-------------|-------------|------|
-| ![Enter Number Of Player](img3.png) | ![Enter Names](img2.png) | ![Card](img1.png) |
+| ![Enter Number Of Player](public/img3.png) | ![Enter Names](public/img2.png) | ![Card](public/img1.png) |
 
 | Card Details | Results |
 |--------------|---------|
-| ![Vote](img5.png) | ![Results](img4.png) |
+| ![Vote](public/img5.png) | ![Results](public/img4.png) |
 
 ## 🛠️ Tech Stack
 
