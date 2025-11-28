@@ -6,7 +6,7 @@ A party guessing game: every guest sees the same football player except the one 
 
 | Enter Names | Reveal Card | Vote |
 |-------------|-------------|------|
-| ![Enter Number Of Player ](img3.png) | ![Enter Names](img2.png) | ![Card](img1.png) |
+| ![Enter Number Of Player](img3.png) | ![Enter Names](img2.png) | ![Card](img1.png) |
 
 | Card Details | Results |
 |--------------|---------|
